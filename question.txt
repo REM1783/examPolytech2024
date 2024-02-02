@@ -10,6 +10,8 @@ La ci permet de réaliser différents tests d'integrations et de performance.
 
 La cd permet de faire les déploiements sur les différents environnements
 
+L'utilité de la ci et cd permet de détecter les erreurs et éviter les incidents de productions. Cela permet de pouvoir tester et automatiser les tests et une partie du déploiement pour l'envoi en production.
+
 Qu'avez vous pensez du cours ?
 
 très interessant
