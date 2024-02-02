@@ -3,18 +3,14 @@
 Un docker est un logiciel qui permet de faire de la conteneurisation. Cela permet de créer des instances d'une application.
 
 
-L'avantage de cette solution est de pouvoir conteneurisé des application. Celà permet de pouvoir démarrer des instances plus rapidement et de pouvoir faire de la scabilité
+L'avantage de cette solution est de pouvoir conteneuriser des applications. Cela permet de pouvoir démarrer des instances plus rapidement et de pouvoir faire de la scalabilité
 
 Qu'est ce que la CI et la CD ? Pourquoi est-ce utile ?
 
-La ci permet de réaliser différents test d'integration et de performance.
+La ci permet de réaliser différents tests d'integrations et de performance.
 
-la cd permet de faire les déploiement
+La cd permet de faire les déploiements sur les différents environnements
 
 Qu'avez vous pensez du cours ?
 
 très interessant
-
-Surprenez moi
-
-mon ordi est rapide :-)

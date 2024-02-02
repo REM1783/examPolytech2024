@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: CI with Maven and angular create_github
+name: CI with Maven
 on:
   push:
     branches: [ "main" ]
@@ -48,5 +48,5 @@ jobs:
         context: .
         file: dockerfile.gha
         push: false
-        tags: rg.fr-par.scw.cloud/exampolytech2024/java/remy:v1
+        tags: rg.fr-par.scw.cloud/exampolytech2024/java/remy:v2
    
