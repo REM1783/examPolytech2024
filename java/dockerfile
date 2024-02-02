@@ -1,0 +1,21 @@
+FROM maven:3.9-eclipse-temurin-8 as builder
+
+WORKDIR /app
+
+COPY . .
+
+RUN mvn clean package -DskipTests
+
+
+FROM eclipse-temurin:8-jre
+
+EXPOSE 8080
+
+workdir /app
+
+LABEL maintainer="remy"
+
+COPY --from=builder /app/target/java-*.jar java.jar
+
+cmd ["java","-jar","java.jar"]
+
