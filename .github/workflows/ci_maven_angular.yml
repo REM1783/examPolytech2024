@@ -27,6 +27,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      path: ./java
       run: mvn -B package --file pom.xml -DskipTests
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
@@ -46,6 +47,7 @@ jobs:
         push: true
         tags: rg.fr-par.scw.cloud/exampolytech2024/java/remy:v1
     - name: Use Node.js 10
+      path: ./angular
       uses: actions/setup-node@v3
       with:
         node-version: 10
@@ -64,4 +66,4 @@ jobs:
         context: angular/
         file: dockerfile.gha
         push: true
-        tags: rg.fr-par.scw.cloud/exampolytech2024/angular/re:v1
+        tags: rg.fr-par.scw.cloud/exampolytech2024/angular/remy:v1
