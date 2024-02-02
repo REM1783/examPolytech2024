@@ -50,25 +50,4 @@ jobs:
         push: true
         path: angular
         tags: rg.fr-par.scw.cloud/exampolytech2024/java/remy:v1
-    - name: Use Node.js 10
-      run:
-        working-directory: ./angular
-      uses: actions/setup-node@v3
-      with:
-        node-version: 10
-        cache: 'npm'
-    - run: npm ci #npm install en plus rapide 
-    - run: npm run build
-    - name: Login to scalway
-      uses: docker/login-action@v3
-      with:
-        registry: rg.fr-par.scw.cloud/exampolytech2024
-        username: ${{ secrets.REGISTRY_USERNAME }}
-        password: ${{ secrets.REGISTRY_PASSOWRD }}
-    - name: Build and push
-      uses: docker/build-push-action@v5
-      with:
-        context: angular/
-        file: dockerfile.gha
-        push: true
-        tags: rg.fr-par.scw.cloud/exampolytech2024/angular/remy:v1
+   
