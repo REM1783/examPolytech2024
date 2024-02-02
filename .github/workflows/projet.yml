@@ -8,15 +8,16 @@
 
 name: CI with Maven and angular create_manual
 
+
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
-jobs:
+defaults:
   run:
     working-directory: ./java
+jobs:
   build:
 
     runs-on: ubuntu-latest
@@ -49,8 +50,9 @@ jobs:
         push: true
         tags: rg.fr-par.scw.cloud/exampolytech2024/java/remy:v1
     - name: Use Node.js 10
-      run:
-        working-directory: ./angular
+      defaults:
+        run:
+          working-directory: ./angular
       uses: actions/setup-node@v3
       with:
         node-version: 10
@@ -69,4 +71,4 @@ jobs:
         context: angular/
         file: dockerfile.gha
         push: true
-        tags: rg.fr-par.scw.cloud/exampolytech2024/angular/re:v1
+        tags: rg.fr-par.scw.cloud/exampolytech2024/angular/remy:v1
