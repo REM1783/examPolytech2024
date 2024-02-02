@@ -2,7 +2,6 @@
 
 Un docker est un logiciel qui permet de faire de la conteneurisation. Cela permet de créer des instances d'une application.
 
-
 L'avantage de cette solution est de pouvoir conteneuriser des applications. Cela permet de pouvoir démarrer des instances plus rapidement et de pouvoir faire de la scalabilité
 
 Qu'est ce que la CI et la CD ? Pourquoi est-ce utile ?
