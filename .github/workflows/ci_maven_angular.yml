@@ -26,7 +26,7 @@ jobs:
         java-version: '8'
         distribution: 'temurin'
         cache: maven
-        path: ./java
+        path: java
     - name: Build with Maven
       
       run: mvn -B package --file pom.xml -DskipTests
@@ -46,7 +46,7 @@ jobs:
         context: java/
         file: dockerfile.gha
         push: true
-        path: ./angular
+        path: angular
         tags: rg.fr-par.scw.cloud/exampolytech2024/java/remy:v1
     - name: Use Node.js 10
       uses: actions/setup-node@v3
