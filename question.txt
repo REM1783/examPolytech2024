@@ -1,0 +1,12 @@
+16) Qu'est ce que Docker ? A quoi cela sert-il ?
+
+Un docker est un logiciel qui permet de faire de la conteneurisation. Cela permet de créer des instances d'une application.
+
+
+L'avantage de cette solution est de pouvoir 
+
+Qu'est ce que la CI et la CD ? Pourquoi est-ce utile ?
+
+Qu'avez vous pensez du cours ?
+
+Surprenez moi

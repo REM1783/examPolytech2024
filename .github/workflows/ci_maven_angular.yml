@@ -12,7 +12,9 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+defaults:
+  run:
+    working-directory: ./java
 jobs:
   build:
 
@@ -49,6 +51,9 @@ jobs:
         path: angular
         tags: rg.fr-par.scw.cloud/exampolytech2024/java/remy:v1
     - name: Use Node.js 10
+      defaults:
+        run:
+          working-directory: ./angular
       uses: actions/setup-node@v3
       with:
         node-version: 10

@@ -14,9 +14,7 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-defaults:
-  run:
-    working-directory: ./java
+
 jobs:
   build:
 
