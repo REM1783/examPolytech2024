@@ -15,6 +15,8 @@ on:
     branches: [ "master" ]
 
 jobs:
+  run:
+    working-directory: ./java
   build:
 
     runs-on: ubuntu-latest
@@ -47,6 +49,8 @@ jobs:
         push: true
         tags: rg.fr-par.scw.cloud/exampolytech2024/java/remy:v1
     - name: Use Node.js 10
+      run:
+        working-directory: ./angular
       uses: actions/setup-node@v3
       with:
         node-version: 10
