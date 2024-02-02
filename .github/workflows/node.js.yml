@@ -33,7 +33,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v5
       with:
-        context: angular/
+        #context: angular/
         file: dockerfile.gha
         push: true
         tags: rg.fr-par.scw.cloud/exampolytech2024/angular/remy:v1
